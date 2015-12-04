@@ -16,6 +16,16 @@
 - 공용 equals x
 - 공용 times 
 - Franc 와 Dollar 비교하기
+- 통화?
+- testFrancMuliplication을 지워야 할까?
 
 java -cp .;junit-4.XX.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest 
+
+8장, 객체만들기 - 두 통화에 대해 일반화 작업을 하고 있는데 두 통화를 좀더 일반화시키려는 시도를 하고있다.
+( 책에서는 두 통화는 그다지 많은 일을 하지 않고있다고 하는데 이 의미는 equals 메소드도 일반화되었고 times도
+일반화 된다면 남는건 생성자 뿐이어서인것같다.  )
+두 통화를 좀 더 일반화시키기 위해 앞으로 시도할 것은 팩토리 메서드를 도입하는 시도이다.
+테스트에서 두 통화에 대한 참조가 사라지는걸 목표로 하고 있다.
+팩토리 메소드를 만듬으로써 테스트 코드에 있는 커플링관계를 디커플링시켰다( new Dollar(5) .. )
+
 

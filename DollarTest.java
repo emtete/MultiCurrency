@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class DollarTest{
 	
-	@Test
+	@Test 
 	public void testMultiplication(){
 		Dollar five = new Dollar(5);		
 		Dollar product = five.times(2);

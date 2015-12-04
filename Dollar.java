@@ -7,12 +7,28 @@ public class Dollar{
 	public Dollar(){	}
 
 	public Dollar(int amount){
-		this.amount = amount;
+		this.amount = amount;		
 	}
 
 	public Dollar times(int multiplier){
 		return new Dollar(amount * multiplier);
 	}
 
+	public boolean equals(Dollar target){
+		if(this.amount == target.amount){
+			return true;
+		}else{
+			return false;
+		}
+
+	}
+	public boolean equals(int amount){
+		if(this.amount == amount){
+			return true;
+		}else{
+			return false;
+		}
+
+	}
 
 }

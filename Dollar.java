@@ -1,8 +1,8 @@
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-public class Dollar{
-	private int amount;
+public class Dollar extends Money{
+	
 
 	public Dollar(){	}
 
@@ -13,13 +13,4 @@ public class Dollar{
 	public Dollar times(int multiplier){
 		return new Dollar(amount * multiplier);
 	}
-
-	public boolean equals(Object object){
-		Dollar dollar = (Dollar)object;
-		return this.amount == dollar.amount;
-			
-
-	}
-	
-
 }

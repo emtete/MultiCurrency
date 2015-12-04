@@ -15,11 +15,8 @@ public class Dollar{
 	}
 
 	public boolean equals(Dollar target){
-		if(this.amount == target.amount){
-			return true;
-		}else{
-			return false;
-		}
+		return this.amount == target.amount;
+			
 
 	}
 	public boolean equals(int amount){
